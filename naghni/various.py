@@ -26,7 +26,7 @@
 ##[ Start date  ]## 2010 July 14
 
 import sys
-import Image
+from PIL import Image
 import math
 
 def error(msg, cont=True, pre=None):
@@ -124,4 +124,4 @@ def surface_to_string(surface, format_in, format_out=None):
         format_out, (surface.get_width(), surface.get_height()),
         surface.get_data(), 'raw', format_in, 0, 1)
 
-    return img.tostring('raw', format_out, 0, 1)
+    return img.tobytes('raw', format_out, 0, 1)
