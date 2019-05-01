@@ -40,8 +40,9 @@ class VectorSurface:
 
 class SVGSurface(VectorSurface):
     def init(self, path, surf_func):
-        self.svg = rsvg.Handle(path)
-        self.size = map(float, self.svg.get_dimension_data()[:2])
+        self.svg = rsvg.Handle().new_from_file(path)
+        self.size = self.svg.get_dimensions()
+        self.size = (float(self.size.width), float(self.size.height))
         self.load_data = surf_func
 
     def render(self, *size):

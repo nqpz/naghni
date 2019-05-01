@@ -11,7 +11,9 @@
 # domain or b) released under a simple all-permissive license.
 
 try:
-    import rsvg
+    import gi
+    gi.require_version('Rsvg', '2.0')
+    from gi.repository import Rsvg as rsvg
 except ImportError:
     import os
     if os.name != 'nt':
