@@ -46,7 +46,7 @@ http://cairographics.org/pycairo/
 ``apt-get install python-numpy``, or ``yum install python-numpy``, or
 visit http://numpy.scipy.org/
 
-``apt-get install python-rsvg``, or ``gnome-python2-rsvg``, or
+``apt-get install gir1.2-rsvg-2.0 python-cairo`` or
 http://librsvg.sourceforge.net/
 
 Optional extras
