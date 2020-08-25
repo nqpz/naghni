@@ -10,7 +10,7 @@ for x in os.walk(os.path.join(os.path.dirname(__file__), 'data')):
     data.append((os.path.join('/usr/local/share/naghni/', x[0]),
                  [os.path.join(x[0], y) for y in x[2]]))
 
-readme = open('README.txt').read()
+readme = open('README.rst').read()
 conf = dict(
     name='Naghni',
     version=version,

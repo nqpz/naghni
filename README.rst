@@ -21,8 +21,7 @@ As of now, it's not possible to die. You may however end up in
 situations that require a restart.
 
 Naghni is free software under the terms of the GNU General Public
-License version 3 (or any later version). The author of Naghni is
-Niels Serup, contactable at ns@metanohi.org . This is version 0.1 of
+License version 3 (or any later version). This is version 0.1 of
 the program. Naghni includes program data created by other people and
 under other free licenses; the details can be found in the file
 LICENSING.txt.
@@ -63,20 +62,9 @@ If present, Naghni will also use these Python modules:
     $ sudo easy_install termcolor
 
 
-Way #1
-------
-Get newest version of Naghni at
-http://metanohi.org/projects/naghni/
-
-Extract the downloaded file and run this in a terminal::
+Run this in a terminal::
 
   $ sudo python setup.py install
-
-Way #2
-------
-Just run this (requires that you have python-setuptools installed)::
-
-  $ sudo easy_install naghni
 
 
 Running
@@ -99,17 +87,6 @@ in-game. Do not worry. Use the arrow keys to control your character,
 press PageUp/PageDown to zoom in/out and Shift+F to toggle an FPS
 viewer. Press the R key to restart a level.
 
-
-For developers
-==============
-
-Naghni uses Git for branches. To get the latest branch, get it from
-gitorious.org like this::
-
-  $ git clone git://gitorious.org/naghni/naghni.git
-
-Naghni is written in Python and should be relatively easy to integrate
-into other programs (in the future, that is).
 
 Designing levels
 ----------------
